@@ -1,0 +1,30 @@
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="/apple_touch_icon.png">
+<script type='text/javascript' src='/js/jquery.js?ver=1.11.2'></script>
+<script type='text/javascript' src='/js/jquery-migrate.min.js?ver=1.2.1'></script>
+<!-- <script type='text/javascript' src='http://sktan123.com/wp-content/plugins/widgetkit/cache/uikit-6a52d79c.js?ver=4.2.4'></script>
+<script type='text/javascript' src='http://sktan123.com/wp-content/plugins/widgetkit/cache/scripts-2a5e64cb.js?ver=4.2.4'></script> -->
+<!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://sktan123.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://sktan123.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 4.2.4" /> -->
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+<link rel="stylesheet" href="{{ "/css/theme.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/css/custom.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="/js/uikit.js"></script>
+<script src="/js/autocomplete.js"></script>
+<script src="/js/search.js"></script>
+<script src="/js/sticky.js"></script>
+<script src="/js/tooltip.js"></script>
+<script src="/js/verticalDropdown.js"></script>
+<script src="/js/social.js"></script>
+<script src="/js/theme.js"></script>
+</head>

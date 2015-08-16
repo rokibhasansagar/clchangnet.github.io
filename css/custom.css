@@ -1,0 +1,40 @@
+ul.clc-list li  {
+    position: relative;
+    margin-left:25px;
+}
+ul.clc-list i  {
+    position: absolute;
+    left: -25px;
+    top: 0px;
+}
+.uk-article-meta { display: none; }
+/*
+ * Margins
+ */
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+    margin-top: initial;
+}
+.uk-panel-hover {
+  background: #fff;
+}
+/* change social icons button background */
+.uk-icon-button:hover,
+.uk-icon-button:focus {
+  background-color: transparent;
+}
+/* change next previous buttons layout*/
+.uk-pagination > li > a,
+.uk-pagination > li > span {
+  padding: 0 12px;
+  line-height: 30px;
+  border-radius: 3px;
+}
+.tm-sidebar-wrapper .tm-sidebar-widget-container {
+  position: fixed;
+  width: 33%;
+}

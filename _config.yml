@@ -1,0 +1,34 @@
+# Site settings
+title: web developer | clchang.net
+name: Allan Chang
+email: allan@clchang.net
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+# the subpath of your site, e.g. /blog/
+baseurl: ""
+
+# the base hostname & protocol for your site
+url: "/"
+# url: "http://clchang.net"
+
+# Social
+mobile: "tel:+60122956066"
+twitter: "https://twitter.com/clchangnet"
+facebook: "https://www.facebook.com/clchangnet"
+google_plus: "http://plus.google.com/118387636159308776887"
+github: ""
+
+# Localization strings
+str_continue_reading: "Continue reading"
+str_next: "Next"
+str_prev: "Prev"
+
+# PAGINATION
+paginate: 5
+paginate_path: "page:num"
+
+# Build settings
+markdown: kramdown

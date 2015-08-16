@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+
+<div class="tm-content-container">
+  <hr class="tm-grid-divider">
+  <div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
+    <div class="tm-main uk-width-medium-1-1">
+      <main class="tm-content">
+        {% for post in paginator.posts %}
+        <article class="uk-article">
+          <h1 class="uk-article-title">{{ post.title }}</h1>
+          <p class="uk-article-meta">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </p>
+
+          {{ post.excerpt }}
+          <a class="uk-button" href="{{ post.url | prepend: site.baseurl }}">
+          {{ site.str_continue_reading }}
+          </a>
+
+        </article>
+        {% endfor %}   
+
+        {% if paginator.total_pages > 1 %}
+        <ul class="uk-pagination">
+          {% if paginator.previous_page %}
+            <li>
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="uk-button" ><i class="uk-icon-angle-double-left"></i>&nbsp;{{ site.str_prev }}</a>
+            </li>
+          {% endif %}
+
+          {% if paginator.next_page %}
+            <li>
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="uk-button" >{{ site.str_next }}&nbsp;<i class="uk-icon-angle-double-right"></i></a>
+            </li>
+          {% endif %} 
+        </ul>   
+        {% endif %} 
+      </main>
+    </div>
+  </div>
+</div>
+
+  
