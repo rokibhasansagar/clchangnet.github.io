@@ -34,7 +34,13 @@ ul.clc-list i  {
   line-height: 30px;
   border-radius: 3px;
 }
+/* set side bar not to scroll */
 .tm-sidebar-wrapper .tm-sidebar-widget-container {
   position: fixed;
   width: 33%;
+  max-width: 478.5px;
+}
+/* change h1 a links to blue */
+.uk-article-title a {
+  color: #2089c0;
 }
