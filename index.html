@@ -10,16 +10,13 @@ layout: default
       <main class="tm-content">
         {% for post in paginator.posts %}
         <article class="uk-article">
-          <h1 class="uk-article-title">{{ post.title }}</h1>
+          <h1 class="uk-article-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
           <p class="uk-article-meta">
             {{ post.date | date: "%B %-d, %Y" }}
           </p>
 
           {{ post.excerpt }}
-          <a class="uk-button" href="{{ post.url | prepend: site.baseurl }}">
-          {{ site.str_continue_reading }}
-          </a>
-
+          
         </article>
         {% endfor %}   
 
