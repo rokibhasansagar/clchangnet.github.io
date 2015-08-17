@@ -37,3 +37,6 @@ post_navigation: true
 
 # Build settings
 markdown: kramdown
+# prevent inserting ids into tags
+kramdown:
+  auto_ids: false
