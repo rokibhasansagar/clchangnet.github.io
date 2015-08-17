@@ -22,6 +22,7 @@ Test erlang
 
 [1]: https://www.erlang-solutions.com/downloads/download-erlang-otp
 
+
 ## Install elixir
 
 Download [elixir][2]
@@ -38,6 +39,7 @@ Test elixir
     iex(2)>
 
 [2]: https://www.erlang-solutions.com/downloads/download-elixir
+
 
 ## Install phoenix
 
@@ -57,6 +59,7 @@ Test elixir
 
 ## Install inotifytools
     sudo apt-get install inotify-tools
+
 
 ## Final - Create app and run
 
