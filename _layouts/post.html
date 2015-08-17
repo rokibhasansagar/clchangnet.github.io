@@ -12,6 +12,7 @@ layout: default
           <p class="uk-article-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
           {{ content }}
         </article>
+
         <!-- Post navigation -->
         {% if site.post_navigation %}
         <ul class="uk-pagination">
@@ -31,6 +32,14 @@ layout: default
           {% endif %}
         </ul>
         {% endif %}
+
+        <!-- Disqus -->
+        {% if site.disqus_shortname %}
+        <div id="comments" class="uk-margin">
+          {% include disqus.html %}
+        </div>
+        {% endif %}
+        
       </main>
     </div>
   </div>
