@@ -44,3 +44,11 @@ ul.clc-list i  {
 .uk-article-title a {
   color: #2089c0;
 }
+/* change article fonts to be larger */
+.uk-article p {
+  font: 400 18px / 26px 'Open Sans', Helvetica, Arial, sans-serif;
+}
+/* change pre code fonts to be larger */
+pre {
+  font: 14px / 18px Consolas, monospace, serif;
+}
