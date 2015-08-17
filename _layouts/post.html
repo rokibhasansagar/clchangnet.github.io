@@ -7,6 +7,10 @@ layout: default
   <div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
     <div class="tm-main uk-width-medium-1-1">
       <main class="tm-content">
+        <ul class="uk-breadcrumb">
+          <li><a href="/">Recent Articles</a></li>
+          <li>{{ page.title }}</li>
+        </ul>
         <article class="uk-article">
           <h1 class="uk-article-title">{{ page.title }}</h1>
           <p class="uk-article-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
@@ -39,7 +43,7 @@ layout: default
           {% include disqus.html %}
         </div>
         {% endif %}
-        
+
       </main>
     </div>
   </div>
