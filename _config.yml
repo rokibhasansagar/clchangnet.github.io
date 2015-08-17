@@ -29,6 +29,7 @@ str_prev: "Prev"
 # PAGINATION
 paginate: 5
 paginate_path: "page:num"
+post_navigation: true
 
 # Build settings
 markdown: kramdown
