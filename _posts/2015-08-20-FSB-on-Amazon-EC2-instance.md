@@ -73,7 +73,7 @@ sudo service apache2 restart
 ```
 
 ```bash
-# to test if ioncube installed
+# create testion.php to test if ioncube installed
 vi /var/www/html/testion.php
 ```
 
