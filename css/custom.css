@@ -49,6 +49,10 @@ ul.clc-list i  {
   font: 400 18px / 26px 'Open Sans', Helvetica, Arial, sans-serif;
 }
 /* change pre code fonts to be larger */
-pre {
+pre, code {
+  font: 14px / 18px Consolas, monospace, serif;
+}
+/* to use ``` does not generate pre in code css */
+:not(pre) > code {
   font: 14px / 18px Consolas, monospace, serif;
 }
