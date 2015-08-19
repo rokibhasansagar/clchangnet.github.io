@@ -38,6 +38,10 @@ post_navigation: true
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+kramdown:
+  use_coderay: true
+
 # prevent inserting ids into tags
 kramdown:
   auto_ids: false
