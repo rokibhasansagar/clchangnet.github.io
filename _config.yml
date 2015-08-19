@@ -36,11 +36,9 @@ paginate_path: "page:num"
 post_navigation: true
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
-
-kramdown:
-  use_coderay: true
 
 # prevent inserting ids into tags
 kramdown:

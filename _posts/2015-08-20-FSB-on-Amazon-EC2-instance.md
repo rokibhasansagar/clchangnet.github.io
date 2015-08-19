@@ -8,8 +8,10 @@ Installing IonCube Loader on Amazon EC2. This guide will set Fresh Store Builder
 
 ## Install apache, php, mysql, curl
 
-	sudo apt-get update
-	sudo apt-get upgrade
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
 
 	sudo apt-get install apache2
 
@@ -67,20 +69,18 @@ Installing IonCube Loader on Amazon EC2. This guide will set Fresh Store Builder
 
 ## Setup directories
 
-{% highlight bash %}
+```bash
 # give correct ownership and permissions
 # check by ls -la in the directory
 sudo chown -R www-data:www-data /var/www/html
-{% endhighlight %}
+```
 
-{% highlight bash %}
-# make sure your user is a member of the www-data group
-# check by groups user
-sudo usermod -a -G www-data $USER
+	# make sure your user is a member of the www-data group
+	<!-- check by groups user -->
+	sudo usermod -a -G www-data $USER
 
-# then give group permissions
-sudo chmod -R 775 /var/www/html
-{% endhighlight %}
+	# then give group permissions
+	sudo chmod -R 775 /var/www/html
 
 ## Create database, user and password
 
