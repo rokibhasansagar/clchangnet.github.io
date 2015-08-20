@@ -8,7 +8,7 @@ Setup guide to install erlang, elixir and phoenix on a ubuntu trusty 14.04 linux
 ## Install erlang
 
 Download [erlang][1]
-Select enterprise distribution, ubuntu trusty 32 or 64 bit (depend on your linux installation), download complete, click to install
+Select enterprise distribution, ubuntu trusty 32 or 64 bit (depend on your linux installation), download complete, click to install.
 
 Test erlang
 
