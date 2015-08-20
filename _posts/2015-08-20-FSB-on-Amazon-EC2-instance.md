@@ -63,7 +63,7 @@ Search for /Dynamic
 Tip:
 > using vi, type at :/Dynamic
 
-```vim
+```apacheconf
 # Add
 zend_extension = /usr/local/ioncube/ioncube_loader_lin_5.5.so
 ```
