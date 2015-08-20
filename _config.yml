@@ -1,6 +1,6 @@
 # Site settings
-title: web application developer | allanchangcl
-name: Allan Chang
+# title: web application developer | allanchangcl
+name: clchangnet.github.io # your site name
 email: allan@clchang.net
 description: > # this means to ignore newlines until "baseurl:"
  Personal Blog on web application development. Notes on learn to 
@@ -8,11 +8,25 @@ description: > # this means to ignore newlines until "baseurl:"
  css, cloud computing and webservers
 
 # the subpath of your site, e.g. /blog/
-baseurl: "http://clchangnet.github.io"
+baseurl: "/"
 
 # the base hostname & protocol for your site
-url: "/"
-# url: "http://clchang.net"
+url: "http://clchangnet.github.io"
+
+# Tags
+timezone:       Asia/Kuala_Lumpur # eg. Asia/Kathmandu
+locale:         en_us # eg. en_us
+# baseurl:        "/base" # does not include hostname
+# url:            "http://yoursitename.com" # URL of site, include http://, do not include a trailing slash
+# name:           "your site name"
+# description:    "your site description"
+icon:           /images/clchangdotnet-logo-003-300.png # /assets/img/icon.png [best 300px X 300px]
+author:
+  facebook:     clchangnet
+  twitter:      clchangnet
+  google_plus:  118387636159308776887
+# fb_admins:      your facebook profile id
+# fb_appid:       your facebook app id
 
 # Social
 mobile: "tel:+60122956066"
