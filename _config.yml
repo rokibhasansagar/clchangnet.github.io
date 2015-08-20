@@ -22,6 +22,7 @@ locale:         en_us # eg. en_us
 # description:    "your site description"
 icon:           /images/clchangdotnet-logo-003-300.png # /assets/img/icon.png [best 300px X 300px]
 author:
+  name:         Allan Chang    
   facebook:     clchangnet
   twitter:      clchangnet
   google_plus:  118387636159308776887
