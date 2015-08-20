@@ -8,11 +8,11 @@ Setup guide to install erlang, elixir and phoenix on a ubuntu trusty 14.04 linux
 ## Install erlang
 
 Download [erlang][1]
-Select enterprise distribution, ubuntu trusty 32 or 64 bit (depend on your linux installation), download complete, click to install.
+Select enterprise distribution, ubuntu trusty 32 or 64 bit (depend on your linux installation), download complete, click to install
 
 Test erlang
 
-```erl-sh
+```erl
 $ erl
 Erlang/OTP 17 [RELEASE CANDIDATE 2] [erts-6.0] [source] [smp:2:2] [async-threads:10] [hipe] [kernel-poll:false]
 Eshell V6.0  (abort with ^G)
@@ -32,7 +32,7 @@ Select ubuntu trusty 32 or 64 bit (depend on your linux installation), download 
 
 Test elixir
 
-```erl-sh
+```erl
 $ iex
 Erlang/OTP 17 [RELEASE CANDIDATE 2] [erts-6.0] [source] [smp:2:2] [async-threads:10] [hipe] [kernel-poll:false]
 Interactive Elixir (0.13.0-dev) - press Ctrl+C to exit (type h() ENTER for help)

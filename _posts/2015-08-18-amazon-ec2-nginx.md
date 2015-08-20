@@ -51,10 +51,10 @@ Add index.php to 'index index.php index.html index.htm;'
 
 Uncomment
 
-```apacheconf
+```vim
 # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
 #
-  location ~ \.php$ {
+location ~ \.php$ {
     fastcgi_split_path_info ^(.+\.php)(/.+)$;
 #   # NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
 #
@@ -64,7 +64,7 @@ Uncomment
     #   fastcgi_pass unix:/var/run/php5-fpm.sock;
     fastcgi_index index.php;
     include fastcgi_params;
-  }
+}
 ```
 
 Fix bad gateway error
