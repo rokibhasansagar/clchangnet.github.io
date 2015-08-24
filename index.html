@@ -25,13 +25,13 @@ title: Web Application Developer | Allan Chang
         <ul class="uk-pagination">
           {% if paginator.previous_page %}
             <li>
-              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="uk-button" ><i class="uk-icon-angle-double-left"></i>&nbsp;{{ site.str_prev }}</a>
+              <a href="{{ paginator.previous_page_path | remove_first:'/' | prepend: site.baseurl | replace: '//', '/' }}" class="uk-button" ><i class="uk-icon-angle-double-left"></i>&nbsp;{{ site.str_prev }}</a>
             </li>
           {% endif %}
 
           {% if paginator.next_page %}
             <li>
-              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="uk-button" >{{ site.str_next }}&nbsp;<i class="uk-icon-angle-double-right"></i></a>
+              <a href="{{ paginator.next_page_path | remove_first:'/' | prepend: site.baseurl | replace: '//', '/' }}" class="uk-button" >{{ site.str_next }}&nbsp;<i class="uk-icon-angle-double-right"></i></a>
             </li>
           {% endif %} 
         </ul>   
