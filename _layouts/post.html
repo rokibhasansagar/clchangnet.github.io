@@ -22,14 +22,14 @@ layout: default
         <ul class="uk-pagination">
           {% if page.previous.url %}
           <li>
-            <a class="uk-button" href="{{ site.url }}{{ page.previous.url }}">
+            <a class="uk-button" href="{{ site.baseurl }}{{ page.previous.url }}">
               <i class="uk-icon-angle-double-left"></i>&nbsp;{{ page.previous.title }}
             </a>
           </li>
           {% endif %}
           {% if page.next.url %}
           <li>
-            <a class="uk-button" href="{{ site.url }}{{ page.next.url }}">
+            <a class="uk-button" href="{{ site.baseurl }}{{ page.next.url }}">
               {{ page.next.title }}&nbsp;<i class="uk-icon-angle-double-right"></i>
             </a>
           </li>
