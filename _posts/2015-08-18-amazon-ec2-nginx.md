@@ -51,7 +51,7 @@ Add index.php to 'index index.php index.html index.htm;'
 
 Uncomment
 
-```vim
+```apacheconf
 # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
 #
 location ~ \.php$ {
@@ -85,24 +85,32 @@ Create directory
 sudo mkdir -p /var/www/html
 ```
 
-Give correct ownership and permissions
+Give correct folder ownership
 
 ```bash
 # check by ls -la in the directory
 sudo chown -R www-data:www-data /var/www/html
 ```
 
+Set folder permissions
+
+```bash
+sudo chmod -R 775 /var/www/html
+```
+
 Make sure your user is a member of the www-data group
 
 ```bash
 # check by groups user
-sudo usermod -a -G www-data $USER
+sudo usermod -a -G www-data $
+# if not member, then add as member
+sudo adduser <username> www-data
 ```
 
-Then give group permissions
+Then give group permissions to read write
 
 ```bash
-sudo chmod -R 775 /var/www/html
+sudo chmod -R g+rwX /var/www
 ```
 
 Restart nginx
