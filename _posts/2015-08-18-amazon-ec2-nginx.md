@@ -51,7 +51,7 @@ Add index.php to 'index index.php index.html index.htm;'
 
 Uncomment
 
-```apacheconf
+```vim
 # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
 #
 location ~ \.php$ {
