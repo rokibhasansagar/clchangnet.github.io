@@ -160,3 +160,9 @@ sudo chown -R www-data:www-data /var/www/html
 ```
 
 Goto to url http://www.domain.com/install to complete Fresh Store Builder installation.
+
+Example Site:
+
+[sunglasses for women][1]
+
+[1]:http://seebetter.co/gifts-for-her/
