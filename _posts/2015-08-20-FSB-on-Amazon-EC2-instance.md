@@ -159,6 +159,7 @@ sudo unzip filename.zip
 sudo chown -R www-data:www-data /var/www/html
 ```
 
-Goto to url http://www.domain.com/install to complete Fresh Store Builder installation. To see a live example of this setup, goto [sunglasses for women][1]
+Goto to url http://www.domain.com/install to complete Fresh Store Builder installation. To see a live example of this setup, goto [sunglasses for women][1] for online store and [Trendy Glasses Fashion][2] for an integrated blog.
 
 [1]:http://seebetter.co/gifts-for-her/
+[2]:http://seebetter.co/blog/2015/09/07/trendy-glasses-wk37.html
