@@ -5,7 +5,11 @@ title: SYNC WooCOMMERCE cart with Wordpress Theme
 
 Synchronize Woocommerce cart in EAT theme from Yootheme. EAT theme has a headerbar on the upper right corner which shows the number of items and the total amount. When clicked, it triggers a javascript popup modal dialog showing the cart contents. Unfortunately, when you installed the theme, it does not comes with the code to integrate with Woocommerce, instead it is just a static mockup html code.
 
-We can make it to work with Woocommerce by adding few lines of code. Install a Wordpress plugin called exec-php to enable php code to work in widgets. Then we cna start modifying the code the themes headerbar widget.
+We can make it to work with Woocommerce by adding few lines of code. Install a Wordpress plugin called exec-php to enable php code to work in widgets. Then we can start modifying the code the themes headerbar widget.
+
+Example site: [T Shirt Design][1]
+
+[1]: http://utwear.com/
 
 ### To show items and amount
 
