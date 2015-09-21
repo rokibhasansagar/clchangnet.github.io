@@ -22,64 +22,64 @@ Example site: [T Shirt Design][1]
 ### To add sync data with the data-modal popup
 
 ```php
-        <tbody>
-          <?php
-          foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-            $_product     = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
-            $product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
+<tbody>
+    <?php
+    foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+        $_product     = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
+        $product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
 
-            if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
-              ?>
-              <tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+        if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
+            ?>
+            <tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
 
                 <td class="product-name">
-                  <?php
-                  if ( ! $_product->is_visible() ) {
-                    echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
-                  } else {
-                    echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s </a>', get_permalink( $cart_item['product_id'] ), $_product->get_title() ), $cart_item, $cart_item_key );
-                  }
+                    <?php
+                    if ( ! $_product->is_visible() ) {
+                        echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
+                    } else {
+                        echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s </a>', get_permalink( $cart_item['product_id'] ), $_product->get_title() ), $cart_item, $cart_item_key );
+                    }
 
-                  echo WC()->cart->get_item_data( $cart_item );
+                    echo WC()->cart->get_item_data( $cart_item );
 
-                  if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
-                    echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>';
-                  }
-                  ?>
+                    if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
+                        echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>';
+                    }
+                    ?>
                 </td>
                 <td class="product-price">
-                  <?php
-                  echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
-                  ?>
+                    <?php
+                    echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+                    ?>
                 </td>
                 <td class="product-quantity">
-                  <?php
-                  echo $cart_item['quantity']
-                  ?>
+                    <?php
+                    echo $cart_item['quantity']
+                    ?>
                 </td>
                 <td class="product-subtotal">
-                  <?php
-                  echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
-                  ?>
+                    <?php
+                    echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
+                    ?>
                 </td>
-              </tr>
-              <?php
-            }
-          }
-          ?>
-        </tbody>
+            </tr>
+            <?php
+        }
+    }
+    ?>
+</tbody>
 ```
 
 ### To show cart total and show checkout button if cart not empty
 
 ```php
-      <div class="uk-text-large uk-text-bold uk-margin-top"><?php echo WC()->cart->get_cart_total(); ?></div>
-      <?php
-      if ( sizeof( $woocommerce->cart->cart_contents) > 0 ) :
-        echo '<a class="uk-button uk-button-primary uk-margin-top" href="' . esc_url( WC()->cart->get_checkout_url() ) . '" class="checkout-button button alt wc-forward">' . __( 'Proceed to Checkout', 'woocommerce' ) . '</a>'; 
-      endif;
-      ?>  
+<div class="uk-text-large uk-text-bold uk-margin-top"><?php echo WC()->cart->get_cart_total(); ?></div>
+<?php
+if ( sizeof( $woocommerce->cart->cart_contents) > 0 ) :
+    echo '<a class="uk-button uk-button-primary uk-margin-top" href="' . esc_url( WC()->cart->get_checkout_url() ) . '" class="checkout-button button alt wc-forward">' . __( 'Proceed to Checkout', 'woocommerce' ) . '</a>'; 
+endif;
+?>  
 ```
 
 
