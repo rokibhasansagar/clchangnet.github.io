@@ -12,7 +12,7 @@ baseurl: "/"
 
 # the base hostname & protocol for your site
 url: "http://clchangnet.github.io"
-mywebsite: "http://clchang.net/#tm-bottom-b"
+mywebsite: "http://clchang.net/about/"
 
 # Tags
 timezone:       Asia/Kuala_Lumpur # eg. Asia/Kathmandu
