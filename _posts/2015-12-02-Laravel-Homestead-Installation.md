@@ -3,8 +3,6 @@ layout: post
 title: Laravel Homestead Installation
 ---
 
-## Laravel Homestead Installation
-
 Came across Laravel while looking for a PHP framework to build a custom web site project. First PHP framework I found was CodeIgniter, which lead me to Laravel. As Laravel is a newer framework, I decided to give it a try.
 
 ### Setting up 
