@@ -22,22 +22,21 @@ I chose to use virtual box method on my ElemenataryOs Linux Box. This way I don'
 
 Homestead is pre packaged Vagrant box that contains all the software required for Laravel development. Such as:
 
-Ubuntu 14.04
-Git
-PHP 5.6 / 7.0
-Xdebug
-HHVM
-Nginx
-MySQL
-Sqlite3
-Postgres
-Composer
-Node (With PM2, Bower, Grunt, and Gulp)
-Redis
-Memcached (PHP 5.x Only)
-Beanstalkd
-Laravel Envoy
-Blackfire Profiler
+- Ubuntu 14.04
+- Git
+- PHP 5.6 / 7.0
+- Xdebug
+- HHVM
+- Nginx
+- MySQL
+- Sqlite3
+- Postgres
+- Composer
+- Node (With PM2, Bower, Grunt, and Gulp)
+- Redis
+- Memcached (PHP 5.x Only)
+- Beanstalkd
+- Blackfire Profiler
 
 ### Installing
 
