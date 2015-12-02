@@ -71,6 +71,7 @@ bash init.sh
 Now you need to setup your folders for Laravel Development. Lets say folder is ~/webdev/laravel. Open up to edit Homestead.yaml - you can find it under ~/.homestead
 
 Homestead.yaml
+
 ```vim
 folders:
     - map: ~/webdev/laravel/
@@ -132,6 +133,7 @@ sites:
 Edit hosts to tell browser where to find your new project. 
 
 hosts
+
 ```vim
 192.168.10.10   firstapp.app
 192.168.10.10   mytodo.app
