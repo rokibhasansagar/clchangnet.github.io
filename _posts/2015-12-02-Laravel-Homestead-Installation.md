@@ -66,7 +66,6 @@ git clone -b php-7 https://github.com/laravel/homestead.git Homestead
 bash init.sh
 ```
 
-#### Folders
 Now you need to setup your folders for Laravel Development. Lets say folder is ~/webdev/laravel. Open up to edit Homestead.yaml - you can find it under ~/.homestead
 
 Homestead.yaml
