@@ -46,7 +46,7 @@ ul.clc-list i  {
 }
 /* change article fonts to be larger */
 .uk-article p {
-  font: 400 18px / 26px 'Open Sans', Helvetica, Arial, sans-serif;
+  font: 300 18px / 26px 'Open Sans', Helvetica, Arial, sans-serif;
 }
 /* change pre code fonts to be larger */
 pre, code {
