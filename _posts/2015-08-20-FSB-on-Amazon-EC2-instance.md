@@ -44,7 +44,7 @@ sudo tar xvfz ioncube_loaders_lin_x86-64.tar.gz
 ```
 
 ```bash
-mkdir /usr/local/ioncube
+sudo mkdir /usr/local/ioncube
 ```
 
 ```bash
