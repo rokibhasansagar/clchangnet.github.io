@@ -54,8 +54,8 @@ post_navigation: true
 
 # Build settings
 # markdown: kramdown
-markdown: redcarpet
-highlighter: pygments
+# markdown: redcarpet
+# highlighter: pygments
 
 # prevent inserting ids into tags
 kramdown:
